@@ -47,7 +47,7 @@ function App() {
                 📞 800-616-1418
               </a>
             </div>
-            <p className="text-sm text-indigo-300 mt-4">✓ Quotes in minutes ✓ A-rated carriers ✓ Licensed since 1987</p>
+            <p className="text-sm text-indigo-300 mt-4">✓ Quotes in minutes ✓ A-rated carriers ✓ Licensed since 1966</p>
           </div>
           <div className="hidden md:grid grid-cols-2 gap-4">
             <div className="bg-white/10 backdrop-blur p-5 rounded-xl">
@@ -177,8 +177,8 @@ function App() {
             </div>
             <div className="text-center">
               <div className="text-5xl mb-4">🛡️</div>
-              <h4 className="font-bold text-lg">Since 1987</h4>
-              <p className="text-indigo-200 mt-2">35+ years in Florida</p>
+              <h4 className="font-bold text-lg">Since 1966</h4>
+              <p className="text-indigo-200 mt-2">Nearly 60 years in Florida</p>
             </div>
             <div className="text-center">
               <div className="text-5xl mb-4">💬</div>
@@ -212,7 +212,7 @@ function App() {
         <div className="max-w-6xl mx-auto text-center">
           <h4 className="text-white font-bold text-xl mb-2">EasyCommercialInsurance.com</h4>
           <p className="text-sm mb-4">All Your Business Insurance — One Easy Place</p>
-          <p className="text-sm">A Tomlinson & Co Agency • Florida Licensed Since 1987</p>
+          <p className="text-sm">A Tomlinson & Co Agency • Florida Licensed Since 1966</p>
           <p className="text-xs mt-4">© {new Date().getFullYear()} Tomlinson & Co Inc. All rights reserved.</p>
         </div>
       </footer>
