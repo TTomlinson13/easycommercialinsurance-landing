@@ -39,15 +39,15 @@ function App() {
               From general liability to workers comp, commercial auto to BOPs — we shop multiple 
               A-rated carriers to find the best coverage at the best price for your Florida business.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
               <a href="https://app.usecanopy.com/c/tomlinson-and-co" target="_blank" rel="noopener noreferrer" className="bg-white text-indigo-700 px-8 py-4 rounded-lg font-bold text-lg transition hover:bg-indigo-50 shadow-lg">
-                Start Your Quote →
+                Quick Quote (2 mins) →
               </a>
-              <a href="tel:800-616-1418" className="bg-indigo-700 hover:bg-indigo-600 border-2 border-indigo-500 text-white px-8 py-4 rounded-lg font-bold text-lg transition">
-                📞 800-616-1418
+              <a href="https://hoinsurance.wufoo.com/forms/mny6lj30o6rvjf/" target="_blank" rel="noopener noreferrer" className="bg-indigo-700 hover:bg-indigo-600 border-2 border-indigo-500 text-white px-8 py-4 rounded-lg font-bold text-lg transition">
+                Detailed Application
               </a>
             </div>
-            <p className="text-sm text-indigo-300 mt-4">✓ Quotes in minutes ✓ A-rated carriers ✓ Licensed since 1966</p>
+            <p className="text-sm text-indigo-300 mt-6">Quotes in minutes ✓ A-rated carriers ✓ Licensed since 1966</p>
           </div>
           <div className="hidden md:grid grid-cols-2 gap-4">
             <div className="bg-white/10 backdrop-blur p-5 rounded-xl">
@@ -69,6 +69,37 @@ function App() {
               <div className="text-3xl mb-2">🚛</div>
               <h3 className="font-bold">Commercial Auto</h3>
               <p className="text-sm text-indigo-200">Fleet coverage</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3 Simple Steps */}
+      <section id="simple-steps" className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-3xl font-bold text-slate-800 mb-4">Get Covered in 3 Simple Steps</h3>
+          <p className="text-slate-600 mb-12 max-w-2xl mx-auto">We make finding the right coverage straightforward and fast.</p>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="flex flex-col items-center">
+              <div className="bg-indigo-100 rounded-full w-20 h-20 flex items-center justify-center mb-4">
+                <span className="text-3xl text-indigo-600">1</span>
+              </div>
+              <h4 className="font-bold text-xl text-slate-800 mb-2">Quick Form</h4>
+              <p className="text-slate-600">Tell us about your business. It only takes a couple of minutes.</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-indigo-100 rounded-full w-20 h-20 flex items-center justify-center mb-4">
+                <span className="text-3xl text-indigo-600">2</span>
+              </div>
+              <h4 className="font-bold text-xl text-slate-800 mb-2">Fast Review</h4>
+              <p className="text-slate-600">Our licensed agents review your needs and shop our network of A-rated carriers.</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-indigo-100 rounded-full w-20 h-20 flex items-center justify-center mb-4">
+                <span className="text-3xl text-indigo-600">3</span>
+              </div>
+              <h4 className="font-bold text-xl text-slate-800 mb-2">Receive Quote</h4>
+              <p className="text-slate-600">We deliver a competitive, no-obligation quote directly to your inbox.</p>
             </div>
           </div>
         </div>
@@ -200,6 +231,47 @@ function App() {
         </div>
       </section>
 
+      {/* Competitive Matrix */}
+      <section id="compare-us" className="py-16 px-4 bg-slate-50">
+        <div className="max-w-5xl mx-auto">
+          <h3 className="text-3xl font-bold text-center text-slate-800 mb-4">How We're Different</h3>
+          <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">We combine modern tech with old-school service. Here’s how we stack up.</p>
+          <div className="bg-white rounded-lg shadow-xl overflow-hidden">
+            <table className="w-full text-left">
+              <thead className="bg-slate-100">
+                <tr>
+                  <th className="p-4 font-bold text-slate-700">Feature</th>
+                  <th className="p-4 font-bold text-indigo-600 text-center">Tomlinson & Co.</th>
+                  <th className="p-4 font-bold text-slate-500 text-center">The Other Guys</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-4 font-semibold text-slate-800">Florida Experts Since</td>
+                  <td className="p-4 text-center font-bold text-green-600">✅ 1966</td>
+                  <td className="p-4 text-center text-slate-500">Varies</td>
+                </tr>
+                <tr className="border-b bg-slate-50">
+                  <td className="p-4 font-semibold text-slate-800">Direct Access to a Licensed Agent</td>
+                  <td className="p-4 text-center font-bold text-green-600">✅ Yes</td>
+                  <td className="p-4 text-center text-slate-500">Call Centers / Bots</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-4 font-semibold text-slate-800">Proactive Annual Policy Reviews</td>
+                  <td className="p-4 text-center font-bold text-green-600">✅ Yes</td>
+                  <td className="p-4 text-center text-slate-500">Rarely</td>
+                </tr>
+                <tr className="bg-slate-50">
+                  <td className="p-4 font-semibold text-slate-800">Active Search for Multi-Policy Discounts</td>
+                  <td className="p-4 text-center font-bold text-green-600">✅ Yes</td>
+                  <td className="p-4 text-center text-slate-500">Often Missed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* Industries */}
       <section id="industries" className="py-16 px-4 bg-slate-50">
         <div className="max-w-6xl mx-auto">
@@ -275,6 +347,21 @@ function App() {
             <a href="tel:800-616-1418" className="bg-indigo-800 hover:bg-indigo-900 text-white font-bold text-xl py-4 px-8 rounded-lg shadow-lg transition">
               📞 800-616-1418
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Seals */}
+      <section id="carriers" className="py-12 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h4 className="font-bold text-slate-600 mb-6">We Work With Florida's Top A-Rated Carriers</h4>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+            <div className="h-8">Progressive</div>
+            <div className="h-8">Travelers</div>
+            <div className="h-8">Nationwide</div>
+            <div className="h-8">The Hartford</div>
+            <div className="h-8">Liberty Mutual</div>
+            <div className="h-8">Mercury</div>
           </div>
         </div>
       </section>
