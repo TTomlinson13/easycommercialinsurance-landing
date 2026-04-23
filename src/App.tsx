@@ -39,12 +39,21 @@ function App() {
               From general liability to workers comp, commercial auto to BOPs — we shop multiple 
               A-rated carriers to find the best coverage at the best price for your Florida business.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a href="https://app.usecanopy.com/c/tomlinson-and-co" target="_blank" rel="noopener noreferrer" className="bg-white text-indigo-700 px-8 py-4 rounded-lg font-bold text-lg transition hover:bg-indigo-50 shadow-lg">
-                Quick Quote (2 mins) →
+            <div className="flex flex-wrap justify-center gap-3">
+              <a href="https://app.usecanopy.com/c/tomlinson-and-co" target="_blank" rel="noopener noreferrer" className="bg-yellow-400 hover:bg-yellow-300 text-black px-7 py-4 rounded-xl font-bold text-base transition shadow-lg text-center">
+                <span className="block text-xl mb-0.5">⚡</span>
+                Quick Quote
+                <span className="block text-xs font-normal opacity-75">2 mins • Auto-fill</span>
               </a>
-              <a href="https://hoinsurance.wufoo.com/forms/mny6lj30o6rvjf/" target="_blank" rel="noopener noreferrer" className="bg-indigo-700 hover:bg-indigo-600 border-2 border-indigo-500 text-white px-8 py-4 rounded-lg font-bold text-lg transition">
-                Detailed Application
+              <a href="https://hoinsurance.wufoo.com/forms/mny6lj30o6rvjf/" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-indigo-50 text-indigo-800 px-7 py-4 rounded-xl font-bold text-base transition shadow-lg text-center">
+                <span className="block text-xl mb-0.5">📝</span>
+                Full Quote Form
+                <span className="block text-xs font-normal opacity-60">Detailed application</span>
+              </a>
+              <a href="tel:800-616-1418" className="bg-indigo-700 hover:bg-indigo-600 text-white px-7 py-4 rounded-xl font-bold text-base transition shadow-lg text-center">
+                <span className="block text-xl mb-0.5">📞</span>
+                Call Us
+                <span className="block text-xs font-normal opacity-75">800-616-1418</span>
               </a>
             </div>
             <p className="text-sm text-indigo-300 mt-6">Quotes in minutes ✓ A-rated carriers ✓ Licensed since 1966</p>
