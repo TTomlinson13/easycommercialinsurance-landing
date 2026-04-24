@@ -28,7 +28,9 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 py-16 md:py-24 px-4 text-white">
+      <section className="relative bg-indigo-900 overflow-hidden py-16 md:py-24 px-4 text-white">
+        <style>{`@keyframes kenBurnsCI{0%{transform:scale(1.0) translate(0%,0%)}25%{transform:scale(1.08) translate(-1.5%,-1%)}50%{transform:scale(1.12) translate(1%,-1.5%)}75%{transform:scale(1.08) translate(1.5%,1%)}100%{transform:scale(1.0) translate(0%,0%)}}.hero-bg-ci{animation:kenBurnsCI 30s ease-in-out infinite;will-change:transform;}`}</style>
+        <div className="absolute inset-0 overflow-hidden"><div className="hero-bg-ci absolute inset-0 bg-cover bg-center" style={{backgroundImage:"url('/hero-commercial.jpg')",opacity:0.4}}></div><div className="absolute inset-0 bg-gradient-to-br from-indigo-900/80 via-indigo-800/60 to-slate-900/70"></div></div>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-indigo-300 font-semibold mb-2 uppercase tracking-wider">Commercial Insurance</p>
