@@ -419,7 +419,19 @@ function App() {
           <h4 className="text-white font-bold text-xl mb-2">EasyCommercialInsurance.com</h4>
           <p className="text-sm mb-4">All Your Business Insurance — One Easy Place</p>
           <p className="text-sm">A Tomlinson & Co Agency • Florida Licensed Since 1966</p>
-          <p className="text-xs mt-4">© {new Date().getFullYear()} Tomlinson & Co Inc. All rights reserved.</p>
+
+          {/* Sister Sites */}
+          <div className="mt-6 pt-6 border-t border-slate-700">
+            <p className="text-xs text-slate-500 uppercase tracking-wide mb-3">Also from Tomlinson & Co</p>
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+              <a href="https://tomlinsonandco.com" className="text-slate-400 hover:text-white transition">Tomlinson &amp; Co (Parent Agency)</a>
+              <a href="https://easycommercialauto.com" className="text-slate-400 hover:text-white transition">Commercial Auto Insurance</a>
+              <a href="https://flawc.com" className="text-slate-400 hover:text-white transition">Workers Compensation</a>
+              <a href="https://hoinsurance.com" className="text-slate-400 hover:text-white transition">Florida Home Insurance</a>
+            </div>
+          </div>
+
+          <p className="text-xs mt-6">© {new Date().getFullYear()} Tomlinson & Co Inc. All rights reserved.</p>
         </div>
       </footer>
     </div>
