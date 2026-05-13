@@ -83,7 +83,7 @@ function App() {
       {/* Hero Section */}
       <section className="relative bg-indigo-900 overflow-hidden py-16 md:py-24 px-4 text-white">
         <style>{`@keyframes kenBurnsCI{0%{transform:scale(1.0) translate(0%,0%)}25%{transform:scale(1.08) translate(-1.5%,-1%)}50%{transform:scale(1.12) translate(1%,-1.5%)}75%{transform:scale(1.08) translate(1.5%,1%)}100%{transform:scale(1.0) translate(0%,0%)}}.hero-bg-ci{animation:kenBurnsCI 30s ease-in-out infinite;will-change:transform;}`}</style>
-        <div className="absolute inset-0 overflow-hidden"><div className="hero-bg-ci absolute inset-0 bg-cover bg-center" style={{backgroundImage:"url('/hero-commercial.jpg')",opacity:0.15}}></div><div className="absolute inset-0 bg-indigo-900/95"></div></div>
+        <div className="absolute inset-0 overflow-hidden" style={{pointerEvents:'none'}}><div className="hero-bg-ci absolute inset-0 bg-cover bg-center" style={{backgroundImage:"url('/hero-commercial.jpg')",opacity:0.15}}></div><div className="absolute inset-0 bg-indigo-900/95"></div></div>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-indigo-300 font-semibold mb-2 uppercase tracking-wider">Commercial Insurance</p>
@@ -133,37 +133,6 @@ function App() {
               <div className="text-3xl mb-2">🚛</div>
               <h3 className="font-bold">Commercial Auto</h3>
               <p className="text-sm text-indigo-200">Fleet coverage</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3 Simple Steps */}
-      <section id="simple-steps" className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-3xl font-bold text-slate-800 mb-4">Get Covered in 3 Simple Steps</h3>
-          <p className="text-slate-600 mb-12 max-w-2xl mx-auto">We make finding the right coverage straightforward and fast.</p>
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="flex flex-col items-center">
-              <div className="bg-indigo-100 rounded-full w-20 h-20 flex items-center justify-center mb-4">
-                <span className="text-3xl text-indigo-600">1</span>
-              </div>
-              <h4 className="font-bold text-xl text-slate-800 mb-2">Quick Form</h4>
-              <p className="text-slate-600">Tell us about your business. It only takes a couple of minutes.</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-indigo-100 rounded-full w-20 h-20 flex items-center justify-center mb-4">
-                <span className="text-3xl text-indigo-600">2</span>
-              </div>
-              <h4 className="font-bold text-xl text-slate-800 mb-2">Fast Review</h4>
-              <p className="text-slate-600">Our licensed agents review your needs and shop our network of A-rated carriers.</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-indigo-100 rounded-full w-20 h-20 flex items-center justify-center mb-4">
-                <span className="text-3xl text-indigo-600">3</span>
-              </div>
-              <h4 className="font-bold text-xl text-slate-800 mb-2">Receive Quote</h4>
-              <p className="text-slate-600">We deliver a competitive, no-obligation quote directly to your inbox.</p>
             </div>
           </div>
         </div>
