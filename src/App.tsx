@@ -182,42 +182,42 @@ function App() {
               <div className="text-4xl mb-4">🏢</div>
               <h4 className="font-bold text-xl text-slate-800 mb-2">Business Owners Policy (BOP)</h4>
               <p className="text-slate-600 mb-4">Bundle general liability and property insurance into one affordable policy. Perfect for small to mid-sized businesses.</p>
-              <a href="https://buyabop.com" className="text-indigo-600 font-semibold hover:underline">Learn more →</a>
+              <button onClick={() => setShowJotform(true)} className="text-indigo-600 font-semibold hover:underline">Get a quote →</button>
             </div>
             
             <div className="p-6 border-2 border-slate-200 rounded-xl hover:border-indigo-400 hover:shadow-lg transition">
               <div className="text-4xl mb-4">⚖️</div>
               <h4 className="font-bold text-xl text-slate-800 mb-2">General Liability</h4>
               <p className="text-slate-600 mb-4">Protection against third-party bodily injury, property damage, and advertising injury claims.</p>
-              <a href="https://app.usecanopy.com/c/tomlinson-and-co" className="text-indigo-600 font-semibold hover:underline">Get a quote →</a>
+              <button onClick={() => setShowJotform(true)} className="text-indigo-600 font-semibold hover:underline">Get a quote →</button>
             </div>
             
             <div className="p-6 border-2 border-slate-200 rounded-xl hover:border-indigo-400 hover:shadow-lg transition">
               <div className="text-4xl mb-4">👷</div>
               <h4 className="font-bold text-xl text-slate-800 mb-2">Workers Compensation</h4>
               <p className="text-slate-600 mb-4">Required coverage for employee injuries. We find competitive rates even for high-risk industries.</p>
-              <a href="https://app.usecanopy.com/c/tomlinson-and-co" className="text-indigo-600 font-semibold hover:underline">Get a quote →</a>
+              <button onClick={() => setShowJotform(true)} className="text-indigo-600 font-semibold hover:underline">Get a quote →</button>
             </div>
             
             <div className="p-6 border-2 border-slate-200 rounded-xl hover:border-indigo-400 hover:shadow-lg transition">
               <div className="text-4xl mb-4">🚛</div>
               <h4 className="font-bold text-xl text-slate-800 mb-2">Commercial Auto</h4>
               <p className="text-slate-600 mb-4">Coverage for business vehicles, from single trucks to entire fleets. Hired and non-owned auto available.</p>
-              <a href="https://app.usecanopy.com/c/tomlinson-and-co" className="text-indigo-600 font-semibold hover:underline">Get a quote →</a>
+              <button onClick={() => setShowJotform(true)} className="text-indigo-600 font-semibold hover:underline">Get a quote →</button>
             </div>
             
             <div className="p-6 border-2 border-slate-200 rounded-xl hover:border-indigo-400 hover:shadow-lg transition">
               <div className="text-4xl mb-4">🏗️</div>
               <h4 className="font-bold text-xl text-slate-800 mb-2">Contractors Insurance</h4>
               <p className="text-slate-600 mb-4">Specialized coverage for GCs, roofers, electricians, plumbers, and all trades. Bonds available.</p>
-              <a href="https://app.usecanopy.com/c/tomlinson-and-co" className="text-indigo-600 font-semibold hover:underline">Get a quote →</a>
+              <button onClick={() => setShowJotform(true)} className="text-indigo-600 font-semibold hover:underline">Get a quote →</button>
             </div>
             
             <div className="p-6 border-2 border-slate-200 rounded-xl hover:border-indigo-400 hover:shadow-lg transition">
               <div className="text-4xl mb-4">🏬</div>
               <h4 className="font-bold text-xl text-slate-800 mb-2">Commercial Property</h4>
               <p className="text-slate-600 mb-4">Protect your building, equipment, inventory, and business personal property from loss or damage.</p>
-              <a href="https://app.usecanopy.com/c/tomlinson-and-co" className="text-indigo-600 font-semibold hover:underline">Get a quote →</a>
+              <button onClick={() => setShowJotform(true)} className="text-indigo-600 font-semibold hover:underline">Get a quote →</button>
             </div>
           </div>
         </div>
