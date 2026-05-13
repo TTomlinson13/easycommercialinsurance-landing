@@ -1,0 +1,5 @@
+build:
+  node_version: "22"
+  install_command: "npm install -g pnpm && pnpm install"
+  build_command: "pnpm run build"
+  publish_directory: "dist"
