@@ -1,5 +1,5 @@
 build:
   node_version: "22"
-  install_command: "npm install -g pnpm && pnpm install"
-  build_command: "pnpm run build"
+  install_command: "echo 'skip'"
+  build_command: "echo 'skip'"
   publish_directory: "dist"
