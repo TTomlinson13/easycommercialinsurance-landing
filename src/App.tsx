@@ -49,9 +49,9 @@ function App() {
       {/* Header */}
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div>
-            <h1 className="text-2xl font-bold text-slate-800">Easy<span className="text-indigo-600">Commercial</span>Insurance</h1>
-            <p className="text-xs text-slate-500">Business Coverage Made Simple</p>
+          <div className="min-w-0">
+            <h1 className="text-lg md:text-2xl font-bold text-slate-800 truncate">Easy<span className="text-indigo-600">Commercial</span><span className="hidden sm:inline">Insurance</span></h1>
+            <p className="text-xs text-slate-500 hidden sm:block">Business Coverage Made Simple</p>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a href="#coverage" className="text-slate-600 hover:text-indigo-600">Coverage</a>
@@ -94,7 +94,7 @@ function App() {
               From general liability to workers comp, commercial auto to BOPs — we shop multiple 
               A-rated carriers to find the best coverage at the best price for your Florida business.
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3">
               <a href="https://app.usecanopy.com/c/tomlinson-and-co" target="_blank" rel="noopener noreferrer" className="bg-yellow-400 hover:bg-yellow-300 text-black px-7 py-4 rounded-xl font-bold text-base transition shadow-lg text-center">
                 <span className="block text-xl mb-0.5">⚡</span>
                 Quick Quote
