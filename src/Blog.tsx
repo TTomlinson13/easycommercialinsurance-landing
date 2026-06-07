@@ -46,8 +46,8 @@ export default function Blog() {
             <p className="text-xs text-slate-500">Business Coverage Made Simple</p>
           </div>
           <div className="flex items-center gap-6">
-            <Link to="/blog" className="hidden sm:inline text-indigo-600 font-semibold hover:text-indigo-800 transition text-sm">Blog</Link>
-            <a href="tel:800-616-1418" className="hidden sm:flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg font-bold text-sm transition">
+            <Link to="/blog" className="sm:inline text-indigo-600 font-semibold hover:text-indigo-800 transition text-sm">Blog</Link>
+            <a href="tel:800-616-1418" className="sm:flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg font-bold text-sm transition">
               📞 800-616-1418
             </a>
           </div>

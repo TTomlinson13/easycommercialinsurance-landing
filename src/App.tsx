@@ -5,7 +5,7 @@ const JOTFORM_ID = '261482212909053'
 
 function JotformModal({ onClose }: { onClose: () => void }) {
   useEffect(() => {
-    document.body.style.overflow = 'hidden'
+//    document.body.style.overflow = 'hidden'
     return () => { document.body.style.overflow = '' }
   }, [])
   return (
@@ -14,7 +14,7 @@ function JotformModal({ onClose }: { onClose: () => void }) {
       style={{ background: 'rgba(15,23,42,0.75)', backdropFilter: 'blur(4px)' }}
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
-      <div className="relative w-full max-w-2xl mx-4 rounded-2xl overflow-hidden shadow-2xl" style={{ maxHeight: '90vh' }}>
+
         <button
           onClick={onClose}
           className="absolute top-3 right-3 z-10 bg-white/90 hover:bg-white text-slate-700 rounded-full w-9 h-9 flex items-center justify-center text-xl font-bold shadow transition"
@@ -50,10 +50,10 @@ function App() {
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="min-w-0">
-            <h1 className="text-lg md:text-2xl font-bold text-slate-800 truncate">Easy<span className="text-indigo-600">Commercial</span><span className="hidden sm:inline">Insurance</span></h1>
-            <p className="text-xs text-slate-500 hidden sm:block">Business Coverage Made Simple</p>
+            <h1 className="text-lg md:text-2xl font-bold text-slate-800 truncate">Easy<span className="text-indigo-600">Commercial</span><span className="sm:inline">Insurance</span></h1>
+            <p className="text-xs text-slate-500 sm:block">Business Coverage Made Simple</p>
           </div>
-          <nav className="hidden md:flex items-center gap-6 text-sm">
+          <nav className="md:flex items-center gap-6 text-sm">
             <a href="#coverage" className="text-slate-600 hover:text-indigo-600">Coverage</a>
             <a href="#industries" className="text-slate-600 hover:text-indigo-600">Industries</a>
             <a href="#why-us" className="text-slate-600 hover:text-indigo-600">Why Us</a>
@@ -83,7 +83,7 @@ function App() {
       {/* Hero Section */}
       <section className="relative bg-indigo-900 overflow-hidden py-16 md:py-24 px-4 text-white">
         <style>{`@keyframes kenBurnsCI{0%{transform:scale(1.0) translate(0%,0%)}25%{transform:scale(1.08) translate(-1.5%,-1%)}50%{transform:scale(1.12) translate(1%,-1.5%)}75%{transform:scale(1.08) translate(1.5%,1%)}100%{transform:scale(1.0) translate(0%,0%)}}.hero-bg-ci{animation:kenBurnsCI 30s ease-in-out infinite;will-change:transform;}`}</style>
-        <div className="absolute inset-0 overflow-hidden" style={{pointerEvents:'none'}}><div className="hero-bg-ci absolute inset-0 bg-cover bg-center" style={{backgroundImage:"url('/hero-commercial.jpg')",opacity:0.15}}></div><div className="absolute inset-0 bg-indigo-900/95"></div></div>
+  
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-indigo-300 font-semibold mb-2 uppercase tracking-wider">Commercial Insurance</p>
@@ -113,7 +113,7 @@ function App() {
             </div>
             <p className="text-sm text-indigo-300 mt-6">Quotes in minutes ✓ A-rated carriers ✓ Licensed since 1966</p>
           </div>
-          <div className="hidden md:grid grid-cols-2 gap-4">
+          <div className="md:grid grid-cols-2 gap-4">
             <div className="bg-white/10 backdrop-blur p-5 rounded-xl">
               <div className="text-3xl mb-2">🏢</div>
               <h3 className="font-bold">Business Owners Policy</h3>
