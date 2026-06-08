@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "echo 'pre-built'",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -23,5 +23,10 @@
     "tailwindcss": "^4.1.14",
     "typescript": "5.9.3",
     "vite": "^7.1.9"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }

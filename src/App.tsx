@@ -28,7 +28,6 @@ function JotformModal({ onClose }: { onClose: () => void }) {
           style={{ width: '100%', height: '80vh', border: 'none', display: 'block', background: '#fff' }}
         />
       </div>
-    </div>
   )
 }
 
