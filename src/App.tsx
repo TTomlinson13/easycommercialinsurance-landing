@@ -40,7 +40,7 @@ function App() {
       {/* Top Bar */}
       <div className="bg-indigo-900 text-white text-sm py-2 px-4">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <span>🏢 Florida Commercial Insurance Specialists</span>
+          <span>📉 Commercial property rates down 5.5% — Most competitive market in years. Shop now.</span>
           <a href="tel:800-616-1418" className="hover:text-indigo-200">📞 800-616-1418</a>
         </div>
       </div>
