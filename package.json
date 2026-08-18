@@ -4,13 +4,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "chmod -R +x node_modules/.pnpm/@esbuild+*/node_modules/@esbuild/*/bin 2>/dev/null; chmod +x node_modules/.pnpm/esbuild@*/node_modules/esbuild/bin/* 2>/dev/null; vite build",
-    "preview": "vite preview"
+    "build": "chmod -R +x node_modules/.pnpm/@esbuild+*/node_modules/@esbuild/*/bin 2>/dev/null; chmod +x node_modules/.pnpm/esbuild@*/node_modules/esbuild/bin/* 2>/dev/null; vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "build:local": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs"
   },
   "dependencies": {
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
-    "react-google-places-autocomplete": "^4.0.1",
     "react-router-dom": "^7.15.0"
   },
   "devDependencies": {

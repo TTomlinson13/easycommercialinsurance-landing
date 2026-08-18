@@ -33,7 +33,6 @@ function JotformModal({ onClose }: { onClose: () => void }) {
 
 function App() {
   const [showNavMenu, setShowNavMenu] = useState(false)
-  const [showQuoteMenu, setShowQuoteMenu] = useState(false)
   const [showJotform, setShowJotform] = useState(false)
   return (
     <div className="min-h-screen bg-white">
