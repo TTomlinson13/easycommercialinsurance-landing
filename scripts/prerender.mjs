@@ -221,6 +221,32 @@ const routes = [
     ],
   },
   {
+    url: '/contractors',
+    out: 'contractors.html',
+    title:
+      'Contractor Insurance in Florida | Same-Day COIs | EasyCommercialInsurance.com',
+    description:
+      'Florida contractor insurance made simple: general liability, workers comp, commercial auto, and same-day certificates. Paste a contract and see what you need. Call 800-616-1418',
+    ogType: 'website',
+    schemas: [
+      AGENCY,
+      {
+        '@type': 'Service',
+        '@id': `${ORIGIN}/contractors#service`,
+        name: 'Contractor Insurance',
+        serviceType: 'Commercial insurance for contractors and trades',
+        provider: { '@id': `${ORIGIN}/#agency` },
+        areaServed: { '@type': 'State', name: 'Florida' },
+        description:
+          'General liability, workers compensation, commercial auto, umbrella, and same-day certificates of insurance for Florida contractors and trades.',
+      },
+      breadcrumbs([
+        { name: 'Home', path: '/' },
+        { name: 'Contractor Insurance', path: '/contractors' },
+      ]),
+    ],
+  },
+  {
     url: '/blog',
     out: join('blog', 'index.html'),
     title: 'Florida Business Insurance News & Guides | EasyCommercialInsurance.com',
@@ -339,7 +365,7 @@ for (const route of routes) {
 // from the content again. The previous hand-maintained sitemap listed five
 // posts while posts.json held ten -- the five newest were absent entirely.
 
-const PRIORITY = { '/': 1.0, '/blog': 0.7 }
+const PRIORITY = { '/': 1.0, '/contractors': 0.9, '/blog': 0.7 }
 const CHANGEFREQ = { '/': 'weekly', '/blog': 'weekly' }
 const postDate = Object.fromEntries(posts.map((p) => [`/blog/${p.slug}`, p.date]))
 

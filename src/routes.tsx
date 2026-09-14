@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import App from './App'
 import Blog from './Blog'
 import BlogPost from './BlogPost'
+import Contractors from './Contractors'
 
 /**
  * Single route table, shared by the browser entry (main.tsx) and the
@@ -12,6 +13,7 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="/contractors" element={<Contractors />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogPost />} />
     </Routes>
